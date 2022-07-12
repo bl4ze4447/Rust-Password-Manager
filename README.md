@@ -2,6 +2,7 @@
 A simple(local) password manager - Rust Version
 
 This applications checks if the user has an account created before using it, if he doesnt, he creates one, then he must login using that account. After he logins, he can either add a list with the following format (Domain ; Email ; Password) or he can either see the existent ones
+
 (This version also checks if the needed files exist or not, if they dont it will create them and also has much better error handling than the C++ one)
 
 >![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
