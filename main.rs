@@ -1,6 +1,7 @@
 use std::fs::{self, File};
 use std::io::prelude::*;
 use std::io::{BufRead, BufReader};
+use std::path::Path;
 
 fn main() {
     start();
@@ -10,10 +11,14 @@ fn start() {
     println!("/////////////////////////////////");
     println!("// Welcome to Password manager //");
     println!("/////////////////////////////////");
-    let _file = File::create("C:\\Users\\Public\\info.txt")
-        .expect("Error encountered while creating file!");
-    let _file = File::create("C:\\Users\\Public\\list.bag")
-        .expect("Error encountered while creating file!");
+    if (Path::new("C:\\Users\\Public\\info.txt").exists() == false) {
+        let _file = File::create("C:\\Users\\Public\\info.txt")
+            .expect("Error encountered while creating file!");
+    }
+    if (Path::new("C:\\Users\\Public\\list.bag").exists() == false) {
+        let _file = File::create("C:\\Users\\Public\\list.bag")
+            .expect("Error encountered while creating file!");
+    }
     start_check();
 }
 
