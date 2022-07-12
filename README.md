@@ -5,6 +5,10 @@ This applications checks if the user has an account created before using it, if 
 
 (This version also checks if the needed files exist or not, if they dont it will create them and also has much better error handling than the C++ one)
 
+
+>![My Image](ignore.png)
+
+
 >![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 
 ```
